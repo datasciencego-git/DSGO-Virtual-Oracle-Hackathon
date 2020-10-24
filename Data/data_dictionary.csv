@@ -1,0 +1,24 @@
+COLUMN_NAME,UNIT,DATA_TYPE,DESCRIPTION
+SITE_ID,,CHAR,Site identification code. See the file site.csv for a mapping of site code to site name.
+DATEON,,DATE,"Date the sample collection began, Local Standard Time; YYYY-MM-DD"
+DATEOFF,,DATE,"Date the sample collection ended, Local Standard Time; YYYY-MM-DD"
+TSO4,ug/m^3,NUMBER,Sulfate (SO4) concentration from Teflon filter; ug/m^3.
+TNO3,ug/m^3,NUMBER,Nitrate (NO3) concentration from Teflon filter; ug/m^3.
+TNH4,ug/m^3,NUMBER,Ammonium (NH4) concentration from Teflon filter; ug/m^3.
+Ca,ug/m^3,NUMBER,Calcium (Ca) concentration from Teflon filter; ug/m^3.
+Mg,ug/m^3,NUMBER,Magnesium (Mg) concentration from Teflon filter; ug/m^3.
+Na,ug/m^3,NUMBER,Sodium (Na) concentration from Teflon filter; ug/m^3.
+K,ug/m^3,NUMBER,Potassium (K) concentration from Teflon filter; ug/m^3.
+Cl,ug/m^3,NUMBER,Chloride (Cl) concentration from Teflon filter; ug/m^3.
+NSO4,ug/m^3,NUMBER,Sulfate (SO4) concentration from Nylon filter; ug/m^3.
+NHNO3,ug/m^3,NUMBER,Nitric acid (NO3) concentration from Nylon filter; ug/m^3.
+WSO2,ug/m^3,NUMBER,Sulfur dioxide (SO2) concentration from Whatman filter; ug/m^3.
+TOTAL_SO2,ug/m^3,NUMBER,Total sulfur dioxide (SO2) concentration calculated from [wso2]+0.667*nso4]; ug/m^3.
+TOTAL_NO3,ug/m^3,NUMBER,Total nitrate (NO3) concentration calculated from [tno3]+0.9841*[nhno3]; ug/m^3.
+FLOW_VOLUME,m^3,NUMBER,Flow volume; m^3.
+VALID_HOURS,,NUMBER,Valid hours during sampling period
+COMMENT_CODES,,CHAR,Comment codes separated by spaces. See codes.csv
+STD2LOCAL_CF,,NUMBER,Factor used to convert atmospheric concentrations from standard to local conditions
+TEMP_SOURCE,,CHAR,Source of mean temperature used in conversion factor. See codes.csv
+QA_CODE,,CHAR,Quality assurance level of the record. (see QAPP for definition of quality assurance levels). See codes.csv
+UPDATE_DATE,,DATE,Date of last record update; YYYY-MM-DD
